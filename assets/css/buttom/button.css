@@ -1,0 +1,73 @@
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #E9ECF8;
+}
+
+.button-encriptar,
+.button-desencriptar,
+#copiarBoton {
+    border-radius: 1rem;
+    border: 1px solid #0A3871;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.button-encriptar {
+    color: white;
+    background-color: #0A3871;
+}
+
+.button-desencriptar {
+    margin-top: 12px;
+    color: #0A3871;
+    background-color: #E9ECF8;
+}
+
+#copiarBoton {
+    display: flex;
+    justify-content: center;
+    width: 67%;
+    text-align: center;
+    color: #0A3871;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 18px;
+    gap: 8px;
+}
+
+.ButCopy:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width:376px) {
+    .buttons {
+        flex-direction: unset;
+        padding: 1rem 40px;
+    }
+
+    .button-encriptar,
+    .button-desencriptar {
+        width: 100%;
+    }
+    .button-encriptar {
+        margin-bottom: 0px;
+        margin-right: 5px;
+    }
+    .button-desencriptar {
+        margin-top: 0px;
+        margin-left: 5px;
+    }
+}
+
+.resultado-encriptado {
+    padding: 0.5rem;
+}
+
+@media screen and (min-width:769px) {
+    .principal {
+        display: flex;
+    }
+}

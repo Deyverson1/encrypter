@@ -1,0 +1,18 @@
+body{
+    font-size:'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;;
+    background-color: #E9ECF8;
+}
+
+.main-encriptador{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.main{
+    background-color: #E9ECF8;
+}
+

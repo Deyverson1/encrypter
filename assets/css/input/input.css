@@ -1,0 +1,63 @@
+.textarea {
+    display: flex;
+    height: 300px;
+    resize: none;
+    font-size: 32px;   
+}
+
+.textarea{
+    color: #0A3871;
+    background-color: #E9ECF8;
+}
+
+.textarea::placeholder{
+    color: #0A3871;
+    font-size: 32px;
+}
+.textarea:focus{
+    outline: none;
+}
+
+.aclaracion{
+    display: flex;
+    justify-content: flex-start;
+    align-items: initial;
+    padding-top: 1rem;
+    font-size: 12px;
+}
+
+.text-icono{
+    padding-left: .5rem;
+    padding-top: 2px;
+}
+
+@media screen and (min-width:376px){
+    .aclaracion{
+        margin-left: 50px;
+        padding-left: 0px;
+    }
+    .textarea{
+        width: calc(100% - 80px);
+        padding: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
