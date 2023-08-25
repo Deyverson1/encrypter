@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto - Alura Latam</title>
+    <link rel="stylesheet" href="../assets/css/main/_reset.css">
+    <!-- Estilos de css -->
+    <link rel="stylesheet" href="../assets/css/logo/logo.css">
+    <link rel="stylesheet" href="../assets/css/input/input.css">
+    <link rel="stylesheet" href="../assets/css/buttom/button.css">
+    <link rel="stylesheet" href="../assets//css/main/_style.css">
+    <link rel="stylesheet" href="../assets/css/resultado-img/muñeco.css">
+    <link rel="stylesheet" href="../assets/css/resultado/resultado.css">
+    <link rel="stylesheet" href="../assets/css/principal.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="principal">
+        <section class="principal-encriptador">
+            <form class="main" data-form>
+                <header class="header">
+                    <img src="../assets/img/Top.png" alt="Logo de la pagina Alura" class="logo">
+                </header>
+                <textarea name="" id="textoResultado" cols="" rows="" class="textarea" autocapitalize="none" placeholder="Ingrese el texto aqui" required  data-text=""></textarea> 
+                <div class="aclaracion">
+                    <img src="../assets/img/bi_exclamation-circle-fill.png" alt="icono" class="img-icono">
+                    <p class="text-icono">Solo letras minusculas y sin acentos</p>
+                </div>
+            </form>
+            <section class="buttons">
+                <button class="button-encriptar" data-encriptar>Encriptar</button>
+                <button class="button-desencriptar" data-desencriptar>Desencriptar</button>
+            </section>
+        </section>
+        <section class="resultado">
+            <div class="resultado-encriptado">
+                <p class="resultado-texto" id="resultadoEncriptado">
+                    <img src="../assets/img/Muñeco.png" alt="Dibujo Alura" class="resultado-muñeco">
+                    <span class="span-texto">
+                        Ningun mensaje fue 
+                        encontrado
+                    </span>
+                    Ingresa el texto que desees 
+                    encriptar o desencriptar  
+                </p> 
+                <button id="copiarBoton" class="ButCopy" style="display: none;">Copiar</button>
+            </div>
+        </section>
+    
+    </section>
+    <script type="module" src="../controllers/js/logica-encriptar.js" ></script>
+    <script type="module" src="../controllers/js/logica-desencriptar.js"></script>
+    <script type="module" src="../controllers/js/boton-copiar.js"></script>
+</body>
+</html>
