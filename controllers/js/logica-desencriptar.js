@@ -10,14 +10,21 @@ function desencriptar(texto) {
 
 const btnDesencriptar = document.querySelector("[data-desencriptar]");
 const resultadoEncriptado = document.getElementById("resultadoEncriptado");
+const txt = document.getElementById("hola"); 
 
 btnDesencriptar.addEventListener("click", (event) => {
     event.preventDefault();
     const textoDesencriptar = document.querySelector("[data-text]").value;
+    if (textoDesencriptar.length > 0) {
     const textoDesencriptado = desencriptar(textoDesencriptar)
     console.log("Texto desencriptado: " + textoDesencriptado)
     resultadoEncriptado.textContent = textoDesencriptado;
     copiarBoton.style.display= "flex"
+    }
+    else{
+        copiarBoton.style.display= "none"
+        resultadoEncriptado.textContent = txt.innerHTML
+    }
 });
 
 

@@ -8,7 +8,7 @@ encriptarButton.addEventListener("click", (event) => {
     const textoEncriptar = document.querySelector("[data-text]").value;
     // const textoEncriptado = encriptarTexto(textoEncriptar);
     // resultadoEncriptado.textContent = textoEncriptado;
-    copiarBoton.style.display = "flex"; 
+    // copiarBoton.style.display = "flex"; 
     copiarBoton.textContent = "Copiar";
 });
 
